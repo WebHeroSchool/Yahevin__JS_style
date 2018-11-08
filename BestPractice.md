@@ -14,6 +14,7 @@
 - Делает код чище.
 - Позволяет избежать нежелательных глоальных переменных.
 - Снижает вероятность нежелательных переобъявлений.    
+
 __Пример:__  
 ```
 // Declare at the beginning  
@@ -31,6 +32,7 @@ fullPrice = price * 100 / discount;
 Инициализация переменных в момент их объявления:  
 - Делает код чище.
 - Позволяет избежать неприсвоенных переменных.    
+
 __Пример:__  
 ```
 // Declare and initiate at the beginning  
@@ -115,8 +117,8 @@ for (var prop in d) {
 Не надо нагружать процесс большим количеством задач, чем это требуется, особенно если выполняется длинный код внутри цикла.  
 
 __Пример:__    
-//Плохо  
 ```
+//Плохо  
 for(var i = 0; i < someArray.length; i++) {    
    var container = document.getElementById('container');    
    container.innerHtml += 'my number: ' + i;  
@@ -124,9 +126,8 @@ for(var i = 0; i < someArray.length; i++) {
 }  
 ```  
 При каждой итерации цикла идет обращение к DOM объекту.    
-
-//Хорошо  
 ```
+//Хорошо  
 var container = document.getElementById('container');  
 for(var i = 0, len = someArray.length; i < len;  i++) {  
    container.innerHtml += 'my number: ' + i;  
@@ -144,7 +145,8 @@ __Пример:__
 // Cycle through array and echo out each name.     
 for(var i = 0, len = array.length; i < len; i++) {    
    console.log(array[i]);    
-}```  
+}
+```  
 
 
 ## Не вставляйте строку в "SetInterval" или "SetTimeOut"
