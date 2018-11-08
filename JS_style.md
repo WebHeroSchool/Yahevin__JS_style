@@ -17,7 +17,7 @@ var person = {
     firstName: "John",  
     lastName: "Doe",  
     age: 50,  
-    eyeColor: "blue"  
+    eyeColor: "red"  
 }; 
 ```
 - Ставьте открывающую скобку в конце первой строки, а также пробел перед нею.
